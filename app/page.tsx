@@ -14,12 +14,12 @@ export default function Home() {
         <div className="container mx-auto px-6 text-center relative z-10">
           <h1 className="text-7xl font-extrabold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 via-sky-200 to-blue-100 animate-fade-in-down tracking-tight">
             Plan Your 2025 Goals
-            <br />
-            <span className="text-2xl font-sans tracking-wider">TIMIZA MALENGO WORKBOOK</span>
+            {/* <br /> */}
+            {/* <span className="text-2xl font-sans tracking-wider block">WITH TIMIZA MALENGO YAKO DIGITAL WORKBOOK</span> */}
           </h1>
-           <div className="w-96 h-1 mx-auto mb-8 bg-gradient-to-r from-cyan-300 via-sky-400 to-blue-500 rounded-full shadow-inner transform hover:scale-110 transition-all duration-300"></div>
-          <p className="text-2xl text-cyan-100 mb-1 animate-fade-in font-light tracking-wide">Transform your dreams into achievable <br /> goals using the proven methodology by Joal Nanauka</p>
-          <p className="text-2xl text-cyan-100 mb-12 animate-fade-in font-light tracking-wide">Personal Development Platform for Smart Goal Setting</p>
+           {/* <div className="w-96 h-1 mx-auto mb-8 bg-gradient-to-r from-cyan-300 via-sky-400 to-blue-500 rounded-full shadow-inner transform hover:scale-110 transition-all duration-300"></div> */}
+          <p className="text-2xl text-cyan-100 mb-12 animate-fade-in font-light tracking-wide ">Transform your dreams into achievable <br /> goals using the proven methodology by Joal Nanauka <span className="lowercase block">WITH TIMIZA MALENGO YAKO DIGITAL WORKBOO </span></p>
+          {/* <p className="text-2xl text-cyan-100 mb-12 animate-fade-in font-light tracking-wide">Personal Development Platform for Smart Goal Setting</p> */}
          
           <button className="bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-600 text-white px-12 py-6 rounded-full hover:from-cyan-600 hover:via-sky-600 hover:to-blue-700 transform hover:scale-105 transition-all duration-300 shadow-2xl text-2xl font-bold tracking-wide backdrop-blur-lg animate-pulse">
             Start Your 2025 Journey
