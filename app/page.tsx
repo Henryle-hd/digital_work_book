@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import one from "@/public/pexels-cottonbro-5077047.jpg"
 import two from "@/public/istockphoto-1340404785-612x612.jpg"
@@ -12,26 +13,26 @@ export default function Home() {
       {/* Section 1: Hero Section */}
       <section className="relative min-h-screen flex items-center bg-gradient-to-r from-indigo-900 via-sky-900 to-blue-800 text-white overflow-hidden mb-8">
         <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center justify-between relative z-10">
-          <div className=" mt-20 lg:mt-0 w-full md:pr-12 mb-12 md:mb-0 flex flex-col items-center justify-center lg:block">
+          <div className=" mt-32 lg:mt-0 w-full md:pr-12 mb-12 md:mb-0 flex flex-col items-center justify-center lg:block">
             <h1 className="text-5xl lg:text-7xl font-extrabold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 via-sky-200 to-blue-100 animate-fade-in-down tracking-tight text-center lg:text-left ">
               Plan Your 2025 Goals
             </h1>
             <p className="text-xl lg:text-2xl text-cyan-100 mb-12 animate-fade-in font-light tracking-wide text-center lg:text-left">
               Transform your dreams into achievable goals using the proven methodology by Joal Nanauka With Timiza Malengo Yako Digital Workbook.
-              {/* <span className="block text-cyan-200 text-3xl lowercase">WITH TIMIZA MALENGO YAKO DIGITAL WORKBOOK</span> */}
+              
             </p>
-            <button className="bg-white text-sky-900 px-10 py-4 rounded-lg hover:bg-sky-100 transition-all duration-300 text-xl font-semibold shadow-lg">
+            <button onClick={() => document.getElementById('plans')?.scrollIntoView({ behavior: 'smooth' })} className="bg-white text-sky-900 px-10 py-4 rounded-lg hover:bg-sky-100 transition-all duration-300 text-xl font-semibold shadow-lg">
               Start Your 2025 Journey
             </button>
           </div>
           <div className="w-full flex justify-center items-center">
-            <div className="relative -mb-20 w-full md:w-full lg:w-full h-[600px] md:h-[1000px] animate-float">
+            <div className="relative -mb-20 lg:mb-0 w-full md:w-full lg:w-[850px] h-[600px] lg:h-[1000px] animate-float">
               <Image 
                 src={JoelNanauka.src} 
                 alt="Joel nanauka"
                 fill
                 className="object-cover w-full h-full rounded-lg transform hover:scale-105 transition-duration-800"
-                // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                
                 priority
               />
             </div>
@@ -40,9 +41,9 @@ export default function Home() {
       </section>
 
       {/* Section 2: What We Do */}
-      <section className="container mx-auto px-6 py-24">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-          <div className="transform hover:scale-105 transition-transform duration-500 hover:shadow-2xl">
+      <section className="container mx-auto px-4 sm:px-6 py-12 sm:py-24" >
+        <div className="flex flex-col-reverse lg:grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-20 items-center">
+          <div className="transform hover:scale-105 transition-transform duration-500 hover:shadow-2xl rounded-3xl">
             <Image 
               src={one} 
               alt="Digital Workbook" 
@@ -50,26 +51,26 @@ export default function Home() {
               height={400} 
               placeholder="blur"
               quality={75}
-              className="rounded-3xl shadow-2xl object-cover"
+              className="rounded-3xl shadow-2xl object-cover w-full h-auto"
               priority 
             />
           </div>
-          <div className="space-y-6">
-            <h2 className="text-6xl font-bold mb-8 text-sky-900 leading-tight">Create Your Personal Workbook</h2>
-            <p className="text-2xl leading-relaxed text-gray-700">
+          <div className="space-y-4 sm:space-y-6 mt-6 lg:mt-0">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 sm:mb-8 text-sky-900 leading-tight">Create Your Personal Workbook</h2>
+            <p className="text-xl sm:text-2xl leading-relaxed text-gray-700">
              { 'Based on "TIMIZ MALENGO YAKO" methodology by Joel Nanauka, create your personalized workbook tailored to your unique aspirations. Get expert guidance and structured planning tools to achieve your 2025 goals.'}
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mt-32">
-          <div className="order-2 md:order-1 space-y-6">
-            <h2 className="text-6xl font-bold mb-8 text-sky-900 leading-tight">Download Your Digital Copy</h2>
-            <p className="text-2xl leading-relaxed text-gray-700">
+        <div className="flex flex-col-reverse lg:grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-20 items-center mt-16 sm:mt-32">
+          <div className="order-2 lg:order-1 space-y-4 sm:space-y-6">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 sm:mb-8 text-sky-900 leading-tight">Download Your Digital Copy</h2>
+            <p className="text-xl sm:text-2xl leading-relaxed text-gray-700">
               Access your personalized workbook instantly through our digital platform. 
               Track your progress, update your goals, and stay motivated with our comprehensive digital tools.
             </p>
           </div>
-          <div className="order-1 md:order-2 transform hover:scale-105 transition-transform duration-500 hover:shadow-2xl">
+          <div className="order-1 lg:order-2 transform hover:scale-105 transition-transform duration-500 hover:shadow-2xl rounded-3xl">
             <Image 
               src={two} 
               alt="Create" 
@@ -77,13 +78,13 @@ export default function Home() {
               height={400} 
               placeholder="blur"
               quality={75}
-              className="rounded-3xl shadow-2xl object-cover"
+              className="rounded-3xl shadow-2xl object-cover w-full h-auto"
               loading="lazy"
             />
           </div>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mt-32">
-          <div className="transform hover:scale-105 transition-transform duration-500 hover:shadow-2xl">
+        <div className="flex flex-col-reverse lg:grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-20 items-center mt-16 sm:mt-32">
+          <div className="transform hover:scale-105 transition-transform duration-500 hover:shadow-2xl rounded-3xl">
             <Image 
               src={three} 
               alt="Download" 
@@ -91,27 +92,27 @@ export default function Home() {
               height={400} 
               placeholder="blur"
               quality={75}
-              className="rounded-3xl shadow-2xl object-cover"
+              className="rounded-3xl shadow-2xl object-cover w-full h-auto"
               loading="lazy"
             />
           </div>
-          <div className="space-y-6">
-            <h2 className="text-6xl font-bold mb-8 text-sky-900 leading-tight">Premium Printed Version</h2>
-            <p className="text-2xl leading-relaxed text-gray-700">
+          <div className="space-y-4 sm:space-y-6 mt-6 lg:mt-0">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 sm:mb-8 text-sky-900 leading-tight">Premium Printed Version</h2>
+            <p className="text-xl sm:text-2xl leading-relaxed text-gray-700">
               Receive a beautifully crafted physical workbook with premium materials. 
               Each workbook includes QR codes linking to your digital progress dashboard for a seamless experience.
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mt-32">
-          <div className="order-2 md:order-1 space-y-6">
-            <h2 className="text-6xl font-bold mb-8 text-sky-900 leading-tight">Delivery Service</h2>
-            <p className="text-2xl leading-relaxed text-gray-700">
+        <div className="flex flex-col-reverse lg:grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-20 items-center mt-16 sm:mt-32">
+          <div className="order-2 lg:order-1 space-y-4 sm:space-y-6">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 sm:mb-8 text-sky-900 leading-tight">Delivery Service</h2>
+            <p className="text-xl sm:text-2xl leading-relaxed text-gray-700">
               {"We'll deliver your printed workbook right to your doorstep."}
               Enjoy the convenience of our reliable delivery service and start your goal-setting journey immediately.
             </p>
           </div>
-          <div className="order-1 md:order-2 transform hover:scale-105 transition-transform duration-500 hover:shadow-2xl">
+          <div className="order-1 lg:order-2 transform hover:scale-105 transition-transform duration-500 hover:shadow-2xl rounded-3xl">
             <Image 
               src={four} 
               alt="Printed Workbook" 
@@ -119,7 +120,7 @@ export default function Home() {
               height={400} 
               placeholder="blur"
               quality={75}
-              className="rounded-3xl shadow-2xl object-cover"
+              className="rounded-3xl shadow-2xl object-cover w-full h-auto"
               loading="lazy"
             />
           </div>
@@ -127,7 +128,7 @@ export default function Home() {
       </section>
 
       {/* Section 3: Plans */}
-      <section className="bg-gradient-to-b from-sky-100 to-sky-200 py-32">
+      <section className="bg-gradient-to-b from-sky-100 to-sky-200 py-32 " id="plans">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-6xl font-bold mb-16 text-sky-900">2025 Goal Achievement Plans</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
