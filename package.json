@@ -12,11 +12,7 @@
     "jspdf": "^2.5.2",
     "next": "15.0.4",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-particles": "^2.12.2",
-    "react-tsparticles": "^2.12.2",
-    "tsparticles": "^3.7.1",
-    "tsparticles-engine": "^2.12.0"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@types/node": "^20",
