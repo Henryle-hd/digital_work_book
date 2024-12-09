@@ -3,35 +3,45 @@ import one from "@/public/pexels-cottonbro-5077047.jpg"
 import two from "@/public/istockphoto-1340404785-612x612.jpg"
 import three from "@/public/colorvisionprintingcom_429017873.png"
 import four from "@/public/pexels-kindelmedia-6868619.jpg"
+import JoelNanauka from "@/public/JoelNanaukaSite.png"
 
 export default function Home() {
   return (
     <div className="bg-gradient-to-b from-sky-50 to-sky-100 text-gray-800">
       
       {/* Section 1: Hero Section */}
-      <section className="relative h-screen flex items-center justify-center bg-gradient-to-r from-indigo-900 via-sky-900 to-blue-800 text-white overflow-hidden mb-8">
-        <div className="absolute inset-0 opacity-25 bg-pattern mix-blend-overlay"></div>
-        <div className="container mx-auto px-6 text-center relative z-10">
-          <h1 className="text-7xl font-extrabold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 via-sky-200 to-blue-100 animate-fade-in-down tracking-tight">
-            Plan Your 2025 Goals
-            {/* <br /> */}
-            {/* <span className="text-2xl font-sans tracking-wider block">WITH TIMIZA MALENGO YAKO DIGITAL WORKBOOK</span> */}
-          </h1>
-           {/* <div className="w-96 h-1 mx-auto mb-8 bg-gradient-to-r from-cyan-300 via-sky-400 to-blue-500 rounded-full shadow-inner transform hover:scale-110 transition-all duration-300"></div> */}
-          <p className="text-2xl text-cyan-100 mb-12 animate-fade-in font-light tracking-wide ">Transform your dreams into achievable <br /> goals using the proven methodology by Joal Nanauka <span className="lowercase block">WITH TIMIZA MALENGO YAKO DIGITAL WORKBOO </span></p>
-          {/* <p className="text-2xl text-cyan-100 mb-12 animate-fade-in font-light tracking-wide">Personal Development Platform for Smart Goal Setting</p> */}
-         
-          <button className="bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-600 text-white px-12 py-6 rounded-full hover:from-cyan-600 hover:via-sky-600 hover:to-blue-700 transform hover:scale-105 transition-all duration-300 shadow-2xl text-2xl font-bold tracking-wide backdrop-blur-lg animate-pulse">
-            Start Your 2025 Journey
-          </button>
-        </div>
-        <div className="absolute bottom-0 right-0 h-[600px] w-[600px] animate-float">
+      <section className="relative min-h-screen flex items-center bg-gradient-to-r from-indigo-900 via-sky-900 to-blue-800 text-white overflow-hidden mb-8">
+        <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center justify-between relative z-10">
+          <div className=" mt-20 lg:mt-0 w-full md:pr-12 mb-12 md:mb-0 flex flex-col items-center justify-center lg:block">
+            <h1 className="text-5xl lg:text-7xl font-extrabold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 via-sky-200 to-blue-100 animate-fade-in-down tracking-tight text-center lg:text-left ">
+              Plan Your 2025 Goals
+            </h1>
+            <p className="text-xl lg:text-2xl text-cyan-100 mb-12 animate-fade-in font-light tracking-wide text-center lg:text-left">
+              Transform your dreams into achievable goals using the proven methodology by Joal Nanauka With Timiza Malengo Yako Digital Workbook.
+              {/* <span className="block text-cyan-200 text-3xl lowercase">WITH TIMIZA MALENGO YAKO DIGITAL WORKBOOK</span> */}
+            </p>
+            <button className="bg-white text-sky-900 px-10 py-4 rounded-lg hover:bg-sky-100 transition-all duration-300 text-xl font-semibold shadow-lg">
+              Start Your 2025 Journey
+            </button>
+          </div>
+          <div className="w-full flex justify-center items-center">
+            <div className="relative -mb-20 w-full md:w-full lg:w-full h-[600px] md:h-[1000px] animate-float">
+              <Image 
+                src={JoelNanauka.src} 
+                alt="Joel nanauka"
+                fill
+                className="object-cover w-full h-full rounded-lg transform hover:scale-105 transition-duration-800"
+                // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                priority
+              />
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Section 2: What We Do */}
       <section className="container mx-auto px-6 py-24">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div className="transform hover:scale-105 transition-transform duration-500 hover:shadow-2xl">
             <Image 
               src={one} 
@@ -51,7 +61,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center mt-32">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mt-32">
           <div className="order-2 md:order-1 space-y-6">
             <h2 className="text-6xl font-bold mb-8 text-sky-900 leading-tight">Download Your Digital Copy</h2>
             <p className="text-2xl leading-relaxed text-gray-700">
@@ -72,7 +82,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center mt-32">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mt-32">
           <div className="transform hover:scale-105 transition-transform duration-500 hover:shadow-2xl">
             <Image 
               src={three} 
@@ -93,7 +103,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center mt-32">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mt-32">
           <div className="order-2 md:order-1 space-y-6">
             <h2 className="text-6xl font-bold mb-8 text-sky-900 leading-tight">Delivery Service</h2>
             <p className="text-2xl leading-relaxed text-gray-700">
@@ -120,7 +130,7 @@ export default function Home() {
       <section className="bg-gradient-to-b from-sky-100 to-sky-200 py-32">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-6xl font-bold mb-16 text-sky-900">2025 Goal Achievement Plans</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {/* Plan 1 */}
             <div className="border-2 border-sky-200 rounded-3xl p-10 bg-white shadow-2xl hover:transform hover:scale-105 transition-all duration-500 backdrop-blur-sm">
               <h3 className="text-4xl font-bold mb-6 text-sky-900">Digital Starter</h3>
