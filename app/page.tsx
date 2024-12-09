@@ -5,6 +5,7 @@ import two from "@/public/istockphoto-1340404785-612x612.jpg"
 import three from "@/public/colorvisionprintingcom_429017873.png"
 import four from "@/public/pexels-kindelmedia-6868619.jpg"
 import JoelNanauka from "@/public/JoelNanaukaSite.png"
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -143,9 +144,9 @@ export default function Home() {
                 <li>1 copy download</li>
                 <li>Email support</li>
               </ul>
-              <button className="bg-gradient-to-r from-sky-400 to-blue-500 text-white px-8 py-4 rounded-full hover:from-sky-500 hover:to-blue-600 transform hover:scale-105 transition-all duration-300 shadow-xl w-full text-lg font-semibold">
+              <Link href="/payment" className="bg-gradient-to-r from-sky-400 to-blue-500 text-white px-8 py-4 rounded-full hover:from-sky-500 hover:to-blue-600 transform hover:scale-105 transition-all duration-300 shadow-xl w-full text-lg font-semibold inline-block">
                 Start Planning 2025
-              </button>
+              </Link>
             </div>
 
             {/* Plan 2 */}
@@ -160,9 +161,9 @@ export default function Home() {
                 <li>Priority support</li>
                 <li>Unlimited downloads</li>
               </ul>
-              <button className="bg-gradient-to-r from-sky-400 to-blue-500 text-white px-8 py-4 rounded-full hover:from-sky-500 hover:to-blue-600 transform hover:scale-105 transition-all duration-300 shadow-xl w-full text-lg font-semibold">
+              <Link href="/payment" className="bg-gradient-to-r from-sky-400 to-blue-500 text-white px-8 py-4 rounded-full hover:from-sky-500 hover:to-blue-600 transform hover:scale-105 transition-all duration-300 shadow-xl w-full text-lg font-semibold inline-block">
                 Accelerate Your Growth
-              </button>
+              </Link>
             </div>
 
             {/* Plan 3 */}
@@ -177,9 +178,9 @@ export default function Home() {
                 <li>24/7 dedicated support</li>
                 <li>Priority delivery service</li>
               </ul>
-              <button className="bg-gradient-to-r from-sky-400 to-blue-500 text-white px-8 py-4 rounded-full hover:from-sky-500 hover:to-blue-600 transform hover:scale-105 transition-all duration-300 shadow-xl w-full text-lg font-semibold">
+              <Link href="/payment" className="bg-gradient-to-r from-sky-400 to-blue-500 text-white px-8 py-4 rounded-full hover:from-sky-500 hover:to-blue-600 transform hover:scale-105 transition-all duration-300 shadow-xl w-full text-lg font-semibold inline-block">
                 Transform Your 2025
-              </button>
+              </Link>
             </div>
           </div>
         </div>
