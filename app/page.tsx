@@ -57,16 +57,16 @@ export default function Home() {
             />
           </div>
           <div className="space-y-4 sm:space-y-6 mt-6 lg:mt-0">
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 sm:mb-8 text-sky-900 leading-tight">Create Your Personal Workbook</h2>
-            <p className="text-xl sm:text-2xl leading-relaxed text-gray-700">
+            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-8 text-sky-900 leading-tight">Create Your Personal Workbook</h2>
+            <p className="text-lg sm:text-xl leading-relaxed text-gray-700">
              { 'Based on "TIMIZ MALENGO YAKO" methodology by Joel Nanauka, create your personalized workbook tailored to your unique aspirations. Get expert guidance and structured planning tools to achieve your 2025 goals.'}
             </p>
           </div>
         </div>
         <div className="flex flex-col-reverse lg:grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-20 items-center mt-16 sm:mt-32">
           <div className="order-2 lg:order-1 space-y-4 sm:space-y-6">
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 sm:mb-8 text-sky-900 leading-tight">Download Your Digital Copy</h2>
-            <p className="text-xl sm:text-2xl leading-relaxed text-gray-700">
+            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-8 text-sky-900 leading-tight">Download Your Digital Copy</h2>
+            <p className="text-lg sm:text-xl leading-relaxed text-gray-700">
               Access your personalized workbook instantly through our digital platform. 
               Track your progress, update your goals, and stay motivated with our comprehensive digital tools.
             </p>
@@ -98,8 +98,8 @@ export default function Home() {
             />
           </div>
           <div className="space-y-4 sm:space-y-6 mt-6 lg:mt-0">
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 sm:mb-8 text-sky-900 leading-tight">Premium Printed Version</h2>
-            <p className="text-xl sm:text-2xl leading-relaxed text-gray-700">
+            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-8 text-sky-900 leading-tight">Premium Printed Version</h2>
+            <p className="text-lg sm:text-xl leading-relaxed text-gray-700">
               Receive a beautifully crafted physical workbook with premium materials. 
               Each workbook includes QR codes linking to your digital progress dashboard for a seamless experience.
             </p>
@@ -107,8 +107,8 @@ export default function Home() {
         </div>
         <div className="flex flex-col-reverse lg:grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-20 items-center mt-16 sm:mt-32">
           <div className="order-2 lg:order-1 space-y-4 sm:space-y-6">
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 sm:mb-8 text-sky-900 leading-tight">Delivery Service</h2>
-            <p className="text-xl sm:text-2xl leading-relaxed text-gray-700">
+            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-8 text-sky-900 leading-tight">Delivery Service</h2>
+            <p className="text-lg sm:text-xl leading-relaxed text-gray-700">
               {"We'll deliver your printed workbook right to your doorstep."}
               Enjoy the convenience of our reliable delivery service and start your goal-setting journey immediately.
             </p>
@@ -131,7 +131,7 @@ export default function Home() {
       {/* Section 3: Plans */}
       <section className="bg-gradient-to-b from-sky-100 to-sky-200 py-32 " id="plans">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-6xl font-bold mb-16 text-sky-900">2025 Goal Achievement Plans</h2>
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold mb-16 text-sky-900">2025 Goal Achievement Plans</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {/* Plan 1 */}
             <div className="border-2 border-sky-200 rounded-3xl p-10 bg-white shadow-2xl hover:transform hover:scale-105 transition-all duration-500 backdrop-blur-sm">
