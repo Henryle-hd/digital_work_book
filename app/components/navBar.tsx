@@ -28,7 +28,8 @@
         <div className="container mx-auto px-6">
           <div className="flex items-center justify-between h-20">
             <Link href="/" className={`text-2xl font-bold ${isHome || isScrolled ? 'text-white' : 'text-sky-900'}`}>
-              <span className="text-blue-500">Work</span><span className="text-blue-50">Book.</span>
+              <span className="text-indigo-500">Work</span>
+  <span className="text-teal-400">Book.</span>
             </Link>
             <div className="hidden md:flex items-center space-x-8">
               <Link href="/" className={`${isHome || isScrolled ? 'text-white' : 'text-sky-900'} hover:text-cyan-300 transition-colors`}>
