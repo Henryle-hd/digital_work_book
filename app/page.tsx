@@ -6,9 +6,13 @@ import three from "@/public/colorvisionprintingcom_429017873.png"
 import four from "@/public/pexels-kindelmedia-6868619.jpg"
 import JoelNanauka from "@/public/JoelNanaukaSite.png"
 import Link from "next/link";
+import Testimonials from "./components/feedback";
+import Contact from "./components/contact";
 
 export default function Home() {
   return (
+    <>
+    {/* <Navbar /> */}
     <div className="bg-gradient-to-b from-sky-50 to-sky-100 text-gray-800">
       
       {/* Section 1: Hero Section */}
@@ -40,98 +44,148 @@ export default function Home() {
           </div>
         </div>
       </section>
+        {/* Section 2: Our Services */}
+        <section className="container mx-auto px-4 sm:px-6 py-12 sm:py-24  bg-transparent">
+          <h2 className="text-4xl lg:text-5xl font-bold text-center mb-16 text-sky-900">Our Services</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Service Card 1 */}
+            <div className="bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300">
+              <div className="relative">
+                <Image 
+                  src={one} 
+                  alt="Digital Workbook" 
+                  width={600} 
+                  height={400} 
+                  placeholder="blur"
+                  quality={75}
+                  className="rounded-t-lg object-cover w-full h-96"
+                  priority 
+                />
+                <div className="absolute top-4 right-4 bg-white p-2 rounded-full shadow-lg">
+                  <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg>
+                </div>
+              </div>
+              <div className="p-5">
+                <h3 className="text-xl font-semibold mb-2 text-sky-900">Create Your Personal Workbook</h3>
+                <p className="text-gray-600 text-sm">
+                  Based on <span className="text-blue-700 cursor-pointer">#TIMIZA_MALENGO_YAKO</span>  methodology by Joel Nanauka, create your personalized workbook tailored to your unique aspirations. Get expert guidance and structured planning tools to achieve your 2025 goals.
+                </p>
+                <div className="mt-4 flex items-center justify-between">
+                  <div className="flex items-center space-x-2">
+                    <svg className="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 20 20"><path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"></path></svg>
+                    <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
+                  </div>
+                  <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path></svg>
+                </div>
+              </div>
+            </div>
 
-      {/* Section 2: What We Do */}
-      <section className="container mx-auto px-4 sm:px-6 py-12 sm:py-24" >
-        <div className="flex flex-col-reverse lg:grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-20 items-center">
-          <div className="transform hover:scale-105 transition-transform duration-500 hover:shadow-2xl rounded-3xl">
-            <Image 
-              src={one} 
-              alt="Digital Workbook" 
-              width={600} 
-              height={400} 
-              placeholder="blur"
-              quality={75}
-              className="rounded-3xl shadow-2xl object-cover w-full h-auto"
-              priority 
-            />
+            {/* Service Card 2 */}
+            <div className="bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300">
+              <div className="relative">
+                <Image 
+                  src={two} 
+                  alt="Create" 
+                  width={600} 
+                  height={400} 
+                  placeholder="blur"
+                  quality={75}
+                  className="rounded-t-lg object-cover w-full h-96"
+                  loading="lazy"
+                />
+                <div className="absolute top-4 right-4 bg-white p-2 rounded-full shadow-lg">
+                  <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg>
+                </div>
+              </div>
+              <div className="p-5">
+                <h3 className="text-xl font-semibold mb-2 text-sky-900">Download Your Digital Copy</h3>
+                <p className="text-gray-600 text-sm">
+                  Access your personalized workbook instantly through our digital platform. 
+                  Track your progress, update your goals, and stay motivated with our comprehensive digital tools.
+                </p>
+                <div className="mt-4 flex items-center justify-between">
+                  <div className="flex items-center space-x-2">
+                    <svg className="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 20 20"><path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"></path></svg>
+                    <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
+                  </div>
+                  <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path></svg>
+                </div>
+              </div>
+            </div>
+
+            {/* Service Card 3 */}
+            <div className="bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300">
+              <div className="relative">
+                <Image 
+                  src={three} 
+                  alt="Download" 
+                  width={600} 
+                  height={400} 
+                  placeholder="blur"
+                  quality={75}
+                  className="rounded-t-lg object-cover w-full h-96"
+                  loading="lazy"
+                />
+                <div className="absolute top-4 right-4 bg-white p-2 rounded-full shadow-lg">
+                  <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg>
+                </div>
+              </div>
+              <div className="p-5">
+                <h3 className="text-xl font-semibold mb-2 text-sky-900">Premium Printed Version</h3>
+                <p className="text-gray-600 text-sm">
+                  Receive a beautifully crafted physical workbook with premium materials. 
+                  Each workbook includes QR codes linking to your digital progress dashboard for a seamless experience.
+                </p>
+                <div className="mt-4 flex items-center justify-between">
+                  <div className="flex items-center space-x-2">
+                    <svg className="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 20 20"><path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"></path></svg>
+                    <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
+                  </div>
+                  <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path></svg>
+                </div>
+              </div>
+            </div>
+
+            {/* Service Card 4 */}
+            <div className="bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300">
+              <div className="relative">
+                <Image 
+                  src={four} 
+                  alt="Printed Workbook" 
+                  width={600} 
+                  height={400} 
+                  placeholder="blur"
+                  quality={75}
+                  className="rounded-t-lg object-cover w-full h-96"
+                  loading="lazy"
+                />
+                <div className="absolute top-4 right-4 bg-white p-2 rounded-full shadow-lg">
+                  <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg>
+                </div>
+              </div>
+              <div className="p-5">
+                <h3 className="text-xl font-semibold mb-2 text-sky-900">Delivery Service</h3>
+                <p className="text-gray-600 text-sm">
+                  {"We'll deliver your printed workbook right to your doorstep. "}
+                  Enjoy the convenience of our reliable delivery service and start your goal-setting journey immediately.
+                </p>
+                <div className="mt-4 flex items-center justify-between">
+                  <div className="flex items-center space-x-2">
+                    <svg className="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 20 20"><path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"></path></svg>
+                    <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
+                  </div>
+                  <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path></svg>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="space-y-4 sm:space-y-6 mt-6 lg:mt-0">
-            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-8 text-sky-900 leading-tight">Create Your Personal Workbook</h2>
-            <p className="text-lg sm:text-xl leading-relaxed text-gray-700">
-             { 'Based on "TIMIZ MALENGO YAKO" methodology by Joel Nanauka, create your personalized workbook tailored to your unique aspirations. Get expert guidance and structured planning tools to achieve your 2025 goals.'}
-            </p>
-          </div>
-        </div>
-        <div className="flex flex-col-reverse lg:grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-20 items-center mt-16 sm:mt-32">
-          <div className="order-2 lg:order-1 space-y-4 sm:space-y-6">
-            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-8 text-sky-900 leading-tight">Download Your Digital Copy</h2>
-            <p className="text-lg sm:text-xl leading-relaxed text-gray-700">
-              Access your personalized workbook instantly through our digital platform. 
-              Track your progress, update your goals, and stay motivated with our comprehensive digital tools.
-            </p>
-          </div>
-          <div className="order-1 lg:order-2 transform hover:scale-105 transition-transform duration-500 hover:shadow-2xl rounded-3xl">
-            <Image 
-              src={two} 
-              alt="Create" 
-              width={600} 
-              height={400} 
-              placeholder="blur"
-              quality={75}
-              className="rounded-3xl shadow-2xl object-cover w-full h-auto"
-              loading="lazy"
-            />
-          </div>
-        </div>
-        <div className="flex flex-col-reverse lg:grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-20 items-center mt-16 sm:mt-32">
-          <div className="transform hover:scale-105 transition-transform duration-500 hover:shadow-2xl rounded-3xl">
-            <Image 
-              src={three} 
-              alt="Download" 
-              width={600} 
-              height={400} 
-              placeholder="blur"
-              quality={75}
-              className="rounded-3xl shadow-2xl object-cover w-full h-auto"
-              loading="lazy"
-            />
-          </div>
-          <div className="space-y-4 sm:space-y-6 mt-6 lg:mt-0">
-            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-8 text-sky-900 leading-tight">Premium Printed Version</h2>
-            <p className="text-lg sm:text-xl leading-relaxed text-gray-700">
-              Receive a beautifully crafted physical workbook with premium materials. 
-              Each workbook includes QR codes linking to your digital progress dashboard for a seamless experience.
-            </p>
-          </div>
-        </div>
-        <div className="flex flex-col-reverse lg:grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-20 items-center mt-16 sm:mt-32">
-          <div className="order-2 lg:order-1 space-y-4 sm:space-y-6">
-            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-8 text-sky-900 leading-tight">Delivery Service</h2>
-            <p className="text-lg sm:text-xl leading-relaxed text-gray-700">
-              {"We'll deliver your printed workbook right to your doorstep."}
-              Enjoy the convenience of our reliable delivery service and start your goal-setting journey immediately.
-            </p>
-          </div>
-          <div className="order-1 lg:order-2 transform hover:scale-105 transition-transform duration-500 hover:shadow-2xl rounded-3xl">
-            <Image 
-              src={four} 
-              alt="Printed Workbook" 
-              width={600} 
-              height={400} 
-              placeholder="blur"
-              quality={75}
-              className="rounded-3xl shadow-2xl object-cover w-full h-auto"
-              loading="lazy"
-            />
-          </div>
-        </div>
-      </section>
+        </section>
 
       {/* Section 3: Plans */}
       <section className="bg-gradient-to-b from-sky-100 to-sky-200 py-32 " id="plans">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold mb-16 text-sky-900">2025 Goal Achievement Plans</h2>
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold mb-1 text-sky-900">2025 Goal Achievement Plans</h2>
+          <p className="text-lg mb-10 text-green-700">Note: All plans are currently free! We are just simulating the payment process, so feel free to try it out without any concerns.</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {/* Plan 1 */}
             <div className="border-2 border-sky-200 rounded-3xl p-10 bg-white shadow-2xl hover:transform hover:scale-105 transition-all duration-500 backdrop-blur-sm">
@@ -144,7 +198,7 @@ export default function Home() {
                 <li>1 copy download</li>
                 <li>Email support</li>
               </ul>
-              <Link href="/payment" className="bg-gradient-to-r from-sky-400 to-blue-500 text-white px-8 py-4 rounded-full hover:from-sky-500 hover:to-blue-600 transform hover:scale-105 transition-all duration-300 shadow-xl w-full text-lg font-semibold inline-block">
+              <Link href="/payment" className="bg-gradient-to-r from-sky-400 to-blue-500 text-white px-8 py-4 rounded-lg hover:from-sky-500 hover:to-blue-600 transform hover:scale-105 transition-all duration-300 shadow-xl w-full text-lg font-semibold inline-block">
                 Start Planning 2025
               </Link>
             </div>
@@ -161,7 +215,7 @@ export default function Home() {
                 <li>Priority support</li>
                 <li>Unlimited downloads</li>
               </ul>
-              <Link href="/payment" className="bg-gradient-to-r from-sky-400 to-blue-500 text-white px-8 py-4 rounded-full hover:from-sky-500 hover:to-blue-600 transform hover:scale-105 transition-all duration-300 shadow-xl w-full text-lg font-semibold inline-block">
+              <Link href="/payment" className="bg-gradient-to-r from-sky-400 to-blue-500 text-white px-8 py-4 rounded-lg hover:from-sky-500 hover:to-blue-600 transform hover:scale-105 transition-all duration-300 shadow-xl w-full text-lg font-semibold inline-block">
                 Accelerate Your Growth
               </Link>
             </div>
@@ -178,13 +232,18 @@ export default function Home() {
                 <li>24/7 dedicated support</li>
                 <li>Priority delivery service</li>
               </ul>
-              <Link href="/payment" className="bg-gradient-to-r from-sky-400 to-blue-500 text-white px-8 py-4 rounded-full hover:from-sky-500 hover:to-blue-600 transform hover:scale-105 transition-all duration-300 shadow-xl w-full text-lg font-semibold inline-block">
+              <Link href="/payment" className="bg-gradient-to-r from-sky-400 to-blue-500 text-white px-8 py-4 rounded-lg hover:from-sky-500 hover:to-blue-600 transform hover:scale-105 transition-all duration-300 shadow-xl w-full text-lg font-semibold inline-block">
                 Transform Your 2025
               </Link>
             </div>
           </div>
         </div>
       </section>
+      {/* Section 4: Testimonials */}
+      <Testimonials />
+      {/* Section 5: Contact */}
+      <Contact />
     </div>
+    </>
   );
 }
