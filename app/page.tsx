@@ -36,7 +36,7 @@ export default function Home() {
                 src={JoelNanauka.src} 
                 alt="Joel nanauka"
                 fill
-                className="object-cover w-full h-full rounded-lg transform hover:scale-105 transition-duration-800"
+                className="object-cover w-full h-full rounded-lg transform hover:scale-105 transition-all transition-duration-300"
                 
                 priority
               />
@@ -185,11 +185,11 @@ export default function Home() {
       <section className="bg-gradient-to-b from-sky-100 to-sky-200 py-32 " id="plans">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold mb-1 text-sky-900">2025 Goal Achievement Plans</h2>
-          <p className="text-lg mb-10 text-green-700">Note: All plans are currently free! We are just simulating the payment process, so feel free to try it out without any concerns.</p>
+          <p className="text-sm lg:text-sm mt-2 mb-10 text-gray-500">Note: All plans are currently free! We are just simulating the payment process, so feel free to try it out without any concerns.</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {/* Plan 1 */}
-            <div className="border-2 border-sky-200 rounded-3xl p-10 bg-white shadow-2xl hover:transform hover:scale-105 transition-all duration-500 backdrop-blur-sm">
-              <h3 className="text-4xl font-bold mb-6 text-sky-900">Digital Starter</h3>
+            <div className="border-2 border-sky-200 rounded-3xl p-10 bg-white shadow-xl hover:shadow-2xl transition-all duration-500 backdrop-blur-sm">
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 text-sky-900">Digital Starter</h3>
               <p className="text-xl mb-8 text-gray-700">Essential digital planning tools</p>
               <p className="text-2xl font-bold mb-6 text-sky-600">TSH 25,000</p>
               <ul className="list-disc text-left ml-6 mb-10 text-gray-700 space-y-3">
@@ -198,14 +198,14 @@ export default function Home() {
                 <li>1 copy download</li>
                 <li>Email support</li>
               </ul>
-              <Link href="/payment" className="bg-gradient-to-r from-sky-400 to-blue-500 text-white px-8 py-4 rounded-lg hover:from-sky-500 hover:to-blue-600 transform hover:scale-105 transition-all duration-300 shadow-xl w-full text-lg font-semibold inline-block">
+              <Link href="/payment" className="bg-gradient-to-r from-sky-400 to-blue-500 text-white px-8 py-4 rounded-lg hover:from-sky-500 hover:to-blue-600 transition-all duration-300 shadow-sm w-full text-lg font-semibold inline-block">
                 Start Planning 2025
               </Link>
             </div>
 
             {/* Plan 2 */}
-            <div className="border-2 border-sky-200 rounded-3xl p-10 bg-white shadow-2xl hover:transform hover:scale-105 transition-all duration-500 backdrop-blur-sm">
-              <h3 className="text-4xl font-bold mb-6 text-sky-900">Growth Pro</h3>
+            <div className="border-2 border-sky-300 rounded-3xl p-10 bg-white shadow-xl hover:shadow-2xl transition-all duration-500 backdrop-blur-sm scale-105">
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 text-sky-900">Growth Pro</h3>
               <p className="text-xl mb-8 text-gray-700">Enhanced planning experience</p>
               <p className="text-2xl font-bold mb-6 text-sky-600">TSH 45,000</p>
               <ul className="list-disc text-left ml-6 mb-10 text-gray-700 space-y-3">
@@ -215,15 +215,15 @@ export default function Home() {
                 <li>Priority support</li>
                 <li>Unlimited downloads</li>
               </ul>
-              <Link href="/payment" className="bg-gradient-to-r from-sky-400 to-blue-500 text-white px-8 py-4 rounded-lg hover:from-sky-500 hover:to-blue-600 transform hover:scale-105 transition-all duration-300 shadow-xl w-full text-lg font-semibold inline-block">
+              <Link href="/payment" className="bg-gradient-to-r from-sky-400 to-blue-500 text-white px-8 py-4 rounded-lg hover:from-sky-500 hover:to-blue-600 transition-all duration-300 shadow-sm w-full text-lg font-semibold inline-block">
                 Accelerate Your Growth
               </Link>
             </div>
 
             {/* Plan 3 */}
-            <div className="border-2 border-sky-200 rounded-3xl p-10 bg-white shadow-2xl hover:transform hover:scale-105 transition-all duration-500 backdrop-blur-sm">
-              <h3 className="text-4xl font-bold mb-6 text-sky-900">Ultimate Success</h3>
-              <p className="text-xl mb-8 text-gray-700">Complete premium experience</p>
+            <div className="border-2 border-sky-200 rounded-3xl p-10 bg-white shadow-xl hover:shadow-2xl transition-all duration-500 backdrop-blur-sm">
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 text-sky-900">Ultimate Success</h3>
+              <p className="text-lg mb-8 text-gray-700">Complete premium experience</p>
               <p className="text-2xl font-bold mb-6 text-sky-600">TSH 75,000</p>
               <ul className="list-disc text-left ml-6 mb-10 text-gray-700 space-y-3">
                 <li>All Growth Pro features</li>
@@ -232,7 +232,7 @@ export default function Home() {
                 <li>24/7 dedicated support</li>
                 <li>Priority delivery service</li>
               </ul>
-              <Link href="/payment" className="bg-gradient-to-r from-sky-400 to-blue-500 text-white px-8 py-4 rounded-lg hover:from-sky-500 hover:to-blue-600 transform hover:scale-105 transition-all duration-300 shadow-xl w-full text-lg font-semibold inline-block">
+              <Link href="/payment" className="bg-gradient-to-r from-sky-400 to-blue-500 text-white px-8 py-4 rounded-lg hover:from-sky-500 hover:to-blue-600 transition-all duration-300 shadow-sm w-full text-lg font-semibold inline-block">
                 Transform Your 2025
               </Link>
             </div>

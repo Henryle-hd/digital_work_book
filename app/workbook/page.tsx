@@ -115,8 +115,9 @@ import Image from 'next/image';
           <div className="flex justify-center items-center">
               <Image src={JoelNanauka.src} alt="Joel Nanauka" className="w-28 h-28 rounded-full border-2 border-blue-500" width={100} height={100}/>
           </div>
-          <div className="max-w-2xl mx-auto border-2 border-sky-200 rounded-3xl p-10 bg-white shadow-2xl hover:transform hover:scale-105 transition-all duration-500 backdrop-blur-sm my-8">
-            <p className="text-lg leading-relaxed text-gray-700">{"Few seconds later you'll find carefully crafted questions by Joel Nanauka based on the TIMIZA MALENGO YAKO methodology. Take your time to answer each question thoughtfully to create your personalized 2025 goal achievement plan."}</p>
+          <div className="max-w-2xl mx-auto border-2 border-sky-100 rounded-3xl px-10 py-5 bg-white shadow-md transition-all duration-500 backdrop-blur-sm my-8">
+             <h1 className="text-xl lg:text-3xl font-semibold text-blue-600 mb-4 text-center">Almost there !🥳</h1>
+            <p className="text-sm lg:text-lg leading-relaxed text-gray-700">{"Few seconds later you'll find carefully crafted questions by Joel Nanauka based on the TIMIZA MALENGO YAKO methodology. Take your time to answer each question thoughtfully to create your personalized 2025 goal achievement plan."}</p>
           </div>
           <div className="flex justify-center items-center space-x-3 mb-8">
             <div className="w-10 h-10 border-4 border-t-4 border-blue-500 border-solid rounded-full animate-spin shadow-lg"></div>
@@ -128,10 +129,10 @@ import Image from 'next/image';
           <div className="flex justify-center items-center mb-4">
             <Image src={JoelNanauka.src} alt="Joel Nanauka" className="w-28 h-28 rounded-full border-2 border-blue-500" width={100} height={100}/>
           </div>
-          <h1 className="text-2xl sm:text-3xlxl lg:text-4xl font-bold text-sky-900 text-center mb-5">
+          {/* <h1 className="text-2xl sm:text-3xlxl lg:text-4xl font-bold text-sky-900 text-center mb-5">
             Personal Development Workbook
           </h1>
-        
+         */}
           <form className="space-y-12">
             {questionCategories.map((category) => (
               <div key={category.category} className="mb-8">

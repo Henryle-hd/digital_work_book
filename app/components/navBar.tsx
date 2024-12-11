@@ -26,7 +26,7 @@
         isScrolled ? 'bg-gradient-to-r from-indigo-900 via-sky-900 to-blue-800 shadow-lg' : 'bg-transparent'
       }`}>
         <div className="container mx-auto px-6">
-          <div className="flex items-center justify-between h-20">
+          <div className="flex items-center justify-between h-16">
             <Link href="/" className={`text-2xl font-bold ${isHome || isScrolled ? 'text-white' : 'text-sky-900'}`}>
               <span className="text-indigo-500">Work</span>
   <span className="text-teal-400">Book.</span>

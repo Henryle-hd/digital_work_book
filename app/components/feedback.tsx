@@ -35,7 +35,7 @@ export default function Testimonials() {
       setCurrentIndex((prevIndex) => 
         prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
       );
-    }, 7000);
+    }, 6000);
 
     return () => clearInterval(timer);
   }, []);
